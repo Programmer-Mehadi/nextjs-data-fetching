@@ -11,7 +11,7 @@ const AllPostPage = ({ post }) => {
 
       <ul className='mt-10'>
         {
-          !isLoading ? data?.map((post, index) => (
+          !isLoading ? data?.data?.map((post, index) => (
             <Link href={`/rtk/post/${post.id}`} key={post.id}>
               <li className='text-center p-2'> {index + 1}. {
                 post.title
